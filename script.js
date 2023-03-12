@@ -34,6 +34,7 @@ document.getElementById('submit').addEventListener('click',function(){
     else if((pin_number.value)==(buttonvalue.value) && (pin_number.value.length>0==buttonvalue.value>0)){
         document.getElementById('match').classList.remove('d-none');
         document.getElementById('nomatch').classList.add('d-none');
+        document.getElementById('count_btn').classList.add('d-none')
 
     }
     else{
@@ -49,7 +50,11 @@ document.getElementById('submit').addEventListener('click',function(){
             document.getElementById('nomatch').classList.add('d-none'); 
             pin_number.value="";
             buttonvalue.value="";
+            count=3
         }
+        
+
     }
+    
 })
 //
